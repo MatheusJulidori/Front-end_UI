@@ -21,7 +21,7 @@
         height: 38px;
         font-size: 1.2em;
         @include border-radius();
-        @include box-shadow;
+        @extend %box-shadow;
         margin-left: 2em;
     }
     h3 {

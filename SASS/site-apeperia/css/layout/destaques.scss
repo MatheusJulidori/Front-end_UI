@@ -26,7 +26,7 @@
         padding: .6em;
         font-size: 1.2em;
         @include border-radius(50px);
-        @include box-shadow;
+        @extend %box-shadow;
         font-weight: bold;
     }
 }
