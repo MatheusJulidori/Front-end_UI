@@ -1,0 +1,16 @@
+//Mixins
+@mixin border-radius($raio: 0.3em) {
+    -webkit-border-radius: $raio;
+    border-radius: $raio;
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+@mixin image-replacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
