@@ -20,7 +20,7 @@
         width: 210px;
         height: 38px;
         font-size: 1.2em;
-        @include border-radius();
+        @include border-radius($raio);
         @extend %box-shadow;
         margin-left: 2em;
     }
