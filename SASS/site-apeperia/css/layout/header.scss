@@ -6,8 +6,27 @@ header {
     height: 90px;
     width: 100%;
     position: absolute;
+    @media #{$media-query-mobile} {
+        height: auto;
+    }
     .container {
         position: relative;
+        @media #{$media-query-mobile} {
+            position: static;
+        }
+    }
+    h1 {
+        @media #{$media-query-mobile} {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+        img {
+            @media #{$media-query-mobile} {
+                max-width: 100%;
+                margin: .5em auto;
+                display: block;
+            }
+        }
     }
 }
 
@@ -17,12 +36,22 @@ header {
     top: -.5em;
     font-size: 1.2em;
     font-weight: lighter;
+    @media #{$media-query-mobile} {
+        position: static;
+        display: block;
+        text-align: center;
+        width: auto;
+    }
     ul {
         padding-left: 0;
     }
     li {
         display: inline-block;
         width: 5em;
+        @media #{$media-query-mobile} {
+            margin: .4em;
+            width: auto;
+        }
     }
     a {
         color: $corbranca;

@@ -7,6 +7,10 @@
     color: $corbranca;
     height: 330px;
     padding-top: 10em;
+    @media #{$media-query-mobile} {
+        font-size: 14px;
+        height: 250px;
+    }
     p {
         width: 30em;
         &:first-child {
