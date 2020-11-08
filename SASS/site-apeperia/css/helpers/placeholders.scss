@@ -5,6 +5,5 @@
 }
 
 %box-shadow {
-    -webkit-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
+    @include box-shadow($box-shadow);
 }
