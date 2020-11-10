@@ -87,4 +87,5 @@ especificação flexible box, todavia tudo isso foi feito para justamente melhor
     /*Coloca uma altura fixa na div azul escura em 250px*/
     flex-wrap: wrap;
     /*Envolcro do flex passa a respeitar o envolcro da div pai dele*/
+    /*flex-wrap + flex-direction = flex-flow: column wrap;*/
 }
