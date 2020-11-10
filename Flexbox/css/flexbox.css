@@ -47,3 +47,44 @@ especificação flexible box, todavia tudo isso foi feito para justamente melhor
     display: flex;
     /*margin entre os botões da navbarja está no style*/
 }
+
+
+/*Rodapé mapa de cursos*/
+
+
+/*Rodapé Patrocinadores*/
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores .container .rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    /*Setar uma width de 70% para ter espaço sobrando*/
+    margin-right: 5%;
+    /*Colocar uma margem lateral de 5%(n achei necessário, mas ta no layout pedido)*/
+    justify-content: space-around;
+    /*Em vez de colocar todo espaço entre esses elementos, ele coloca em volta, ou seja, também coloca espço na esquerda do primeiro e na direita do ultimo*/
+}
+
+.rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm .rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    /*Muda a direção do flex para vertical, ou seja, coluna*/
+    height: 250px;
+    /*Coloca uma altura fixa na div azul escura em 250px*/
+    flex-wrap: wrap;
+    /*Envolcro do flex passa a respeitar o envolcro da div pai dele*/
+}
