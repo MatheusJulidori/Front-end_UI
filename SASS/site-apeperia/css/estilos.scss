@@ -1,8 +1,11 @@
+$sprite-spacing:5px;
+@import 'sprite/*.png';
 @import 'base/normalize';
 @import 'compass/css3';
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 @import 'helpers/placeholders';
+@import 'helpers/functions';
 @import 'layout/geral';
 @import 'layout/header';
 @import 'layout/destaques';

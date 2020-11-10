@@ -4,8 +4,8 @@ footer {
     display: block;
     position: relative;
     .container {
-        padding-top: 3em;
-        height: 6.5em;
+        padding-top: multiplicador(3);
+        height: multiplicador(6.5);
         position: relative;
         img {
             width: 250px;
@@ -47,12 +47,12 @@ footer {
 }
 
 .menu-rodape {
-    top: 1em;
+    top: multiplicador(1);
     right: 0;
     ul {
         li {
             display: inline-block;
-            margin-left: 2em;
+            margin-left: multiplicador(2);
         }
     }
 }
@@ -67,7 +67,7 @@ footer {
             width: 55px;
             height: 55px;
             @extend %image-replacement;
-            margin-left: 1em;
+            margin-left: multiplicador(1);
         }
     }
     a {

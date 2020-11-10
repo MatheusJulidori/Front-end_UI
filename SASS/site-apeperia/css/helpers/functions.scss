@@ -1,0 +1,3 @@
+@function multiplicador($multiplicador) {
+    @return $multiplicador*$tamanho-fonte-padrao;
+}

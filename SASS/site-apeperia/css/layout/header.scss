@@ -23,7 +23,7 @@ header {
         img {
             @media #{$media-query-mobile} {
                 max-width: 100%;
-                margin: .5em auto;
+                margin: multiplicador(.5) auto;
                 display: block;
             }
         }
@@ -33,8 +33,8 @@ header {
 .menu-principal {
     position: absolute;
     right: 0;
-    top: -.5em;
-    font-size: 1.2em;
+    top: multiplicador(-.5);
+    font-size: multiplicador(1.2);
     font-weight: lighter;
     @media #{$media-query-mobile} {
         position: static;
@@ -47,9 +47,9 @@ header {
     }
     li {
         display: inline-block;
-        width: 5em;
+        width: multiplicador(5);
         @media #{$media-query-mobile} {
-            margin: .4em;
+            margin: multiplicador(.4);
             width: auto;
         }
     }
