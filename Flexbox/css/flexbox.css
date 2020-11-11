@@ -49,7 +49,62 @@ especificação flexible box, todavia tudo isso foi feito para justamente melhor
 }
 
 
+/*Cursos*/
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+
+/*Video*/
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+
 /*Rodapé mapa de cursos*/
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    /*Muda a direção do flex para vertical, ou seja, coluna*/
+    height: 250px;
+    /*Coloca uma altura fixa na div azul escura em 250px*/
+    flex-wrap: wrap;
+    /*Envolcro do flex passa a respeitar o envolcro da div pai dele*/
+    /*flex-wrap + flex-direction = flex-flow: column wrap;*/
+}
 
 
 /*Rodapé Patrocinadores*/
@@ -79,13 +134,54 @@ especificação flexible box, todavia tudo isso foi feito para justamente melhor
     display: flex;
 }
 
-.rodapePrincipal-navMap-list {
-    display: flex;
-    flex-direction: column;
-    /*Muda a direção do flex para vertical, ou seja, coluna*/
-    height: 250px;
-    /*Coloca uma altura fixa na div azul escura em 250px*/
-    flex-wrap: wrap;
-    /*Envolcro do flex passa a respeitar o envolcro da div pai dele*/
-    /*flex-wrap + flex-direction = flex-flow: column wrap;*/
+@media(max-width:980px) {
+    /*Cabeçalho*/
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .cabecalhoPrincipal .container .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+    /*Cursos*/
+    .conteudoPrincipal-cursos-link {
+        width: 98%;
+        margin: 1%;
+    }
+    /*Video*/
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+    /*Rodapé mapa de cursos*/
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+    /*Rodapé Patrocinadores*/
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores .container .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+    .rodapePrincipal-patrocinadores .container .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .rodapePrincipal-patrocinadores .container .rodapePrincipal-patrocinadores-list li {
+        margin-bottom: 2%;
+    }
+    .rodapePrincipal-contatoForm .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
 }
