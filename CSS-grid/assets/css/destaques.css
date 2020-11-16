@@ -4,6 +4,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3);
     height: calc(100vh - 50px);
+    max-width: 100%;
 }
 
 .destaques__titulo {
@@ -19,6 +20,11 @@
     background-color: #dcdcdc;
     display: flex;
     justify-content: center;
+}
+
+.destaques__principal:hover,
+.destaques__secundario:hover {
+    cursor: pointer;
 }
 
 .destaques__principal {
